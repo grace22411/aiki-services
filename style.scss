@@ -464,6 +464,7 @@ footer {
   margin-top: 50px;
   .row {
     .col-md-6 {
+      margin-bottom: 10px;;
       h3 {
         font-weight: 700;
       }
@@ -476,14 +477,26 @@ footer {
     .col-md-12{
       form{
           .form-group{
-            input,select{
+            input,select,textarea{
               outline: none;
               border:1px solid rgba(0, 0, 0, 0.04);
               background-color: #fefefe;
+              margin-bottom: 20px;;
+            }
+            label{
+              font-size:14px;
+              font-weight: 600;
+            }
+            textarea{
+              height:150px;
             }
             ::placeholder{
               font-size:13px;
             }
+          }
+          button{
+            margin-top:30px;
+            width:200px;
           }
      
       }

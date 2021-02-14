@@ -399,6 +399,9 @@ footer .post-footer .row .privacy {
 .get_service {
   margin-top: 50px;
 }
+.get_service .row .col-md-6 {
+  margin-bottom: 10px;
+}
 .get_service .row .col-md-6 h3 {
   font-weight: 700;
 }
@@ -407,13 +410,25 @@ footer .post-footer .row .privacy {
   color: #888a94;
   width: 80%;
 }
-.get_service .row .col-md-12 form .form-group input, .get_service .row .col-md-12 form .form-group select {
+.get_service .row .col-md-12 form .form-group input, .get_service .row .col-md-12 form .form-group select, .get_service .row .col-md-12 form .form-group textarea {
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.04);
   background-color: #fefefe;
+  margin-bottom: 20px;
+}
+.get_service .row .col-md-12 form .form-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.get_service .row .col-md-12 form .form-group textarea {
+  height: 150px;
 }
 .get_service .row .col-md-12 form .form-group ::placeholder {
   font-size: 13px;
+}
+.get_service .row .col-md-12 form button {
+  margin-top: 30px;
+  width: 200px;
 }
 
 .register {
