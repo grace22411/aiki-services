@@ -1,12 +1,26 @@
 class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
+    <div class="modalContent ">
+    <div class="inn animated slideInRight">
+        <div class="cancel"><i class="fas fa-times"></i></div>
+        <ul>
+        <li> <a href="index.html"> Home</a></li>
+        <li><a href="about.html"> About</a></li>
+        <li><a href="service.html"> Services</a></li>
+        <li><a href="contact.html"> Contact</a></li>
+        <li><a href="RequestService.html"> Request Our Services</a></li>
+        <li><a href="signup.html">Sign up for free</a>  
+        </li>
+        </ul>
+    </div>
+</div>
       <header class="container">
       <div class="row">
-          <div class="logo col-md-3">
+          <div class="logo col-md-3 col-8">
               <img src="images/aiki-logo.png" alt="">
           </div>
-          <div class="col-md-9">
+          <div class="col-md-9 col-4">
               <ul>
                   <li> <a href="index.html"> Home</a></li>
                   <li><a href="about.html"> About</a></li>
@@ -16,6 +30,7 @@ class Header extends HTMLElement {
                   <li><a href="signup.html"> <button>Sign up for free</button></a>  
                   </li>
               </ul>
+              <i class="fas fa-bars"></i>
           </div>
       </div>
 
@@ -25,8 +40,8 @@ class Header extends HTMLElement {
 }
 
 class Footer extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <footer>
       <div class="container">
           <div class="row">
@@ -64,7 +79,7 @@ class Footer extends HTMLElement {
       </div>
   </footer>
         `;
-    }
   }
-customElements.define('main-header', Header);
-customElements.define('main-footer', Footer);
+}
+customElements.define("main-header", Header);
+customElements.define("main-footer", Footer);
