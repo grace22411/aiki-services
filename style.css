@@ -39,6 +39,7 @@ body {
   background-color: #fff;
   height: 500px;
   float: right;
+  z-index: 9999;
   width: 80%;
   padding: 20px 0px;
 }
@@ -62,6 +63,7 @@ body {
 }
 .modalContent ul li a {
   color: #444444;
+  text-decoration: none;
 }
 
 header {
@@ -190,34 +192,35 @@ header .row .col-md-9 i {
 .services .container .row .col-md-3 {
   justify-content: center;
   display: flex;
+  margin-bottom: 30px;
 }
-.services .container .row .col-md-3 .plumbing, .services .container .row .col-md-3 .electrical, .services .container .row .col-md-3 .refrigerator, .services .container .row .col-md-3 .bathroom {
+.services .container .row .col-md-3 .plumbing, .services .container .row .col-md-3 .electrical {
   width: 100%;
   background-color: #fff;
   box-shadow: -10px 10px 0 rgba(96, 113, 165, 0.31);
   border-radius: 15px;
-  height: 480px;
+  height: 450px;
   z-index: 9999;
   margin-top: -100px;
   filter: grayscale(0%);
   text-align: center;
-  padding: 40px;
+  padding: 20px;
 }
-.services .container .row .col-md-3 .plumbing .image-service, .services .container .row .col-md-3 .electrical .image-service, .services .container .row .col-md-3 .refrigerator .image-service, .services .container .row .col-md-3 .bathroom .image-service {
+.services .container .row .col-md-3 .plumbing .image-service, .services .container .row .col-md-3 .electrical .image-service {
   height: 180px;
   width: 180px;
   margin: auto;
   margin-bottom: 20px;
 }
-.services .container .row .col-md-3 .plumbing .image-service img, .services .container .row .col-md-3 .electrical .image-service img, .services .container .row .col-md-3 .refrigerator .image-service img, .services .container .row .col-md-3 .bathroom .image-service img {
+.services .container .row .col-md-3 .plumbing .image-service img, .services .container .row .col-md-3 .electrical .image-service img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.services .container .row .col-md-3 .plumbing h3, .services .container .row .col-md-3 .electrical h3, .services .container .row .col-md-3 .refrigerator h3, .services .container .row .col-md-3 .bathroom h3 {
+.services .container .row .col-md-3 .plumbing h3, .services .container .row .col-md-3 .electrical h3 {
   font-size: 16px;
 }
-.services .container .row .col-md-3 .plumbing p, .services .container .row .col-md-3 .electrical p, .services .container .row .col-md-3 .refrigerator p, .services .container .row .col-md-3 .bathroom p {
+.services .container .row .col-md-3 .plumbing p, .services .container .row .col-md-3 .electrical p {
   color: #888a94;
   font-size: 14px;
 }
@@ -226,14 +229,61 @@ header .row .col-md-9 i {
     margin-top: 130px;
     height: 600px;
   }
-  .services .container .row .col-md-3 .plumbing, .services .container .row .col-md-3 .electrical, .services .container .row .col-md-3 .refrigerator, .services .container .row .col-md-3 .bathroom {
-    width: 100%;
+  .services .container .row .col-md-6 .plumbing, .services .container .row .col-md-6 .col-md-3 .electrical, .services .container .row .col-md-3 .col-md-6 .electrical {
+    margin: 30px;
     margin-bottom: 20px;
   }
   .services .container .row .col-md-6 .electrical {
     margin-top: 0;
   }
 }
+.missionVission {
+  width: 100%;
+  height: 500px;
+  margin: 100px 0 0px 0;
+  background-color: #fff;
+}
+.missionVission .container .row .col-md-6 .text {
+  padding: 20px;
+  margin-top: 60px;
+}
+.missionVission .container .row .col-md-6 .text h2 {
+  font-size: 25px;
+  font-weight: 800;
+  color: #2f499b;
+}
+.missionVission .container .row .col-md-6 .text p {
+  font-size: 15px;
+}
+.missionVission .container .row .col-md-6 .text:nth-child(2) {
+  margin-top: 10px;
+}
+.missionVission .container .row .col-md-6 .mission-img {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+}
+.missionVission .container .row .col-md-6 .mission-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .missionVission .container .row .col-md-6 .mission-img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .missionVission .container .row .col-md-6 .mission-img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 1024px) {
+  .missionVission .container .row .col-md-6 .mission-img {
+    display: none;
+  }
+}
+
 .whyChooseUs {
   margin-top: 50px;
 }
@@ -247,6 +297,7 @@ header .row .col-md-9 i {
   text-align: center;
   background-color: #fff;
   border-radius: 0 0 20px 0px;
+  margin-bottom: 30px;
 }
 .whyChooseUs .row .col-md-4 .why-content img {
   height: 50px;
@@ -261,19 +312,6 @@ header .row .col-md-9 i {
   font-size: 14px;
   color: #888a94;
 }
-.logo .row .col-md-3 {
-  display: flex;
-  justify-content: center;
-  margin: 30px 0px 0px 0px;
-}
-/* .logo .row .col-md-3 .logo-image {
-  width: 40%;
-  padding: 10px;
-  text-align: center;
-  background-color: #fff;
-  border-radius: 0 0 20px 0px;
-} */
-
 .service-page {
   height: 100vh;
   width: 100%;
@@ -585,6 +623,23 @@ footer .post-footer .row .privacy {
 .register .row .col-md-5 form button {
   width: 100%;
   height: 50px;
+}
+.logo {
+  margin-top: 40px;
+}
+.logo .row .col-md-3 {
+  display: flex;
+  justify-content: center;
+}
+.logo .row .col-md-3 .logo-image {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+.logo .row .col-md-3 .logo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=style.css.map */

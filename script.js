@@ -18,7 +18,7 @@ class Header extends HTMLElement {
       <header class="container">
       <div class="row">
           <div class="logo col-md-3 col-8">
-              <img src="images/aiki-logo.png" alt="">
+              <a href="index.html"><img src="images/aiki-logo.png" alt=""></a>
           </div>
           <div class="col-md-9 col-4">
               <ul>
@@ -45,12 +45,12 @@ class Footer extends HTMLElement {
       <footer>
       <div class="container">
           <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 col-6">
                   <div class="logo">
                       <img src="images/aiki-white logo.png" alt="Aiki Logo White">
                   </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-6">
                   <h3>Company</h3>
                   <li> <a href="index.html"> Home</a></li>
                 <li><a href="about.html"> About</a></li>
@@ -69,10 +69,10 @@ class Footer extends HTMLElement {
       </div>
       <div class="container post-footer">
           <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 col-6">
                   <p>All rights Reserved,2021</p>
               </div>
-              <div class="col-md-6 privacy">
+              <div class="col-md-6 col-6 privacy">
                   <p>Privacy Policy | Terms of Condition </p>
               </div>
           </div>
@@ -83,3 +83,5 @@ class Footer extends HTMLElement {
 }
 customElements.define("main-header", Header);
 customElements.define("main-footer", Footer);
+
+
